@@ -1,0 +1,1632 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Tue Oct 24 05:34:19 2023
+| Host         : ubuntu2004 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3 -file /home/ubuntu/lab3/lab-fir/fir/project_1/timing_report.txt
+| Design       : fir
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (122)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (331)
+5. checking no_input_delay (114)
+6. checking no_output_delay (127)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (122)
+--------------------------
+ There are 113 register/latch pins with no clock driven by root clock pin: axis_clk (HIGH)
+
+ap_config_reg_reg[0]/C
+ap_config_reg_reg[10]/C
+ap_config_reg_reg[11]/C
+ap_config_reg_reg[12]/C
+ap_config_reg_reg[13]/C
+ap_config_reg_reg[14]/C
+ap_config_reg_reg[15]/C
+ap_config_reg_reg[16]/C
+ap_config_reg_reg[17]/C
+ap_config_reg_reg[18]/C
+ap_config_reg_reg[19]/C
+ap_config_reg_reg[1]/C
+ap_config_reg_reg[20]/C
+ap_config_reg_reg[21]/C
+ap_config_reg_reg[22]/C
+ap_config_reg_reg[23]/C
+ap_config_reg_reg[24]/C
+ap_config_reg_reg[25]/C
+ap_config_reg_reg[26]/C
+ap_config_reg_reg[27]/C
+ap_config_reg_reg[28]/C
+ap_config_reg_reg[29]/C
+ap_config_reg_reg[2]/C
+ap_config_reg_reg[30]/C
+ap_config_reg_reg[31]/C
+ap_config_reg_reg[3]/C
+ap_config_reg_reg[4]/C
+ap_config_reg_reg[5]/C
+ap_config_reg_reg[6]/C
+ap_config_reg_reg[7]/C
+ap_config_reg_reg[8]/C
+ap_config_reg_reg[9]/C
+axilite_state_reg[0]/C
+axilite_state_reg[1]/C
+axilite_state_reg[2]/C
+axis_state_reg[0]/C
+axis_state_reg[1]/C
+data_length_reg_reg[0]/C
+data_length_reg_reg[10]/C
+data_length_reg_reg[11]/C
+data_length_reg_reg[12]/C
+data_length_reg_reg[13]/C
+data_length_reg_reg[14]/C
+data_length_reg_reg[15]/C
+data_length_reg_reg[16]/C
+data_length_reg_reg[17]/C
+data_length_reg_reg[18]/C
+data_length_reg_reg[19]/C
+data_length_reg_reg[1]/C
+data_length_reg_reg[20]/C
+data_length_reg_reg[21]/C
+data_length_reg_reg[22]/C
+data_length_reg_reg[23]/C
+data_length_reg_reg[24]/C
+data_length_reg_reg[25]/C
+data_length_reg_reg[26]/C
+data_length_reg_reg[27]/C
+data_length_reg_reg[28]/C
+data_length_reg_reg[29]/C
+data_length_reg_reg[2]/C
+data_length_reg_reg[30]/C
+data_length_reg_reg[31]/C
+data_length_reg_reg[3]/C
+data_length_reg_reg[4]/C
+data_length_reg_reg[5]/C
+data_length_reg_reg[6]/C
+data_length_reg_reg[7]/C
+data_length_reg_reg[8]/C
+data_length_reg_reg[9]/C
+data_reset_done_reg/C
+fir_counter_reg[0]/C
+fir_counter_reg[1]/C
+fir_counter_reg[2]/C
+fir_counter_reg[3]/C
+first_input_reg[0]/C
+first_input_reg[1]/C
+first_input_reg[2]/C
+first_input_reg[3]/C
+sm_tdata_reg_reg[0]/C
+sm_tdata_reg_reg[10]/C
+sm_tdata_reg_reg[11]/C
+sm_tdata_reg_reg[12]/C
+sm_tdata_reg_reg[13]/C
+sm_tdata_reg_reg[14]/C
+sm_tdata_reg_reg[15]/C
+sm_tdata_reg_reg[16]/C
+sm_tdata_reg_reg[17]/C
+sm_tdata_reg_reg[18]/C
+sm_tdata_reg_reg[19]/C
+sm_tdata_reg_reg[1]/C
+sm_tdata_reg_reg[20]/C
+sm_tdata_reg_reg[21]/C
+sm_tdata_reg_reg[22]/C
+sm_tdata_reg_reg[23]/C
+sm_tdata_reg_reg[24]/C
+sm_tdata_reg_reg[25]/C
+sm_tdata_reg_reg[26]/C
+sm_tdata_reg_reg[27]/C
+sm_tdata_reg_reg[28]/C
+sm_tdata_reg_reg[29]/C
+sm_tdata_reg_reg[2]/C
+sm_tdata_reg_reg[30]/C
+sm_tdata_reg_reg[31]/C
+sm_tdata_reg_reg[3]/C
+sm_tdata_reg_reg[4]/C
+sm_tdata_reg_reg[5]/C
+sm_tdata_reg_reg[6]/C
+sm_tdata_reg_reg[7]/C
+sm_tdata_reg_reg[8]/C
+sm_tdata_reg_reg[9]/C
+sm_tlast_reg_reg/C
+sm_tvalid_reg_reg/C
+ss_tready_reg_reg/C
+
+ There are 3 register/latch pins with no clock driven by root clock pin: axilite_state_reg[0]/Q (HIGH)
+
+next_axilite_state_reg[0]/G
+next_axilite_state_reg[1]/G
+next_axilite_state_reg[2]/G
+
+ There are 3 register/latch pins with no clock driven by root clock pin: axilite_state_reg[1]/Q (HIGH)
+
+next_axilite_state_reg[0]/G
+next_axilite_state_reg[1]/G
+next_axilite_state_reg[2]/G
+
+ There are 3 register/latch pins with no clock driven by root clock pin: axilite_state_reg[2]/Q (HIGH)
+
+next_axilite_state_reg[0]/G
+next_axilite_state_reg[1]/G
+next_axilite_state_reg[2]/G
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (331)
+--------------------------------------------------
+ There are 331 pins that are not constrained for maximum delay. (HIGH)
+
+ap_config_reg_reg[0]/CLR
+ap_config_reg_reg[0]/D
+ap_config_reg_reg[10]/CE
+ap_config_reg_reg[10]/CLR
+ap_config_reg_reg[10]/D
+ap_config_reg_reg[11]/CE
+ap_config_reg_reg[11]/CLR
+ap_config_reg_reg[11]/D
+ap_config_reg_reg[12]/CE
+ap_config_reg_reg[12]/CLR
+ap_config_reg_reg[12]/D
+ap_config_reg_reg[13]/CE
+ap_config_reg_reg[13]/CLR
+ap_config_reg_reg[13]/D
+ap_config_reg_reg[14]/CE
+ap_config_reg_reg[14]/CLR
+ap_config_reg_reg[14]/D
+ap_config_reg_reg[15]/CE
+ap_config_reg_reg[15]/CLR
+ap_config_reg_reg[15]/D
+ap_config_reg_reg[16]/CE
+ap_config_reg_reg[16]/CLR
+ap_config_reg_reg[16]/D
+ap_config_reg_reg[17]/CE
+ap_config_reg_reg[17]/CLR
+ap_config_reg_reg[17]/D
+ap_config_reg_reg[18]/CE
+ap_config_reg_reg[18]/CLR
+ap_config_reg_reg[18]/D
+ap_config_reg_reg[19]/CE
+ap_config_reg_reg[19]/CLR
+ap_config_reg_reg[19]/D
+ap_config_reg_reg[1]/CLR
+ap_config_reg_reg[1]/D
+ap_config_reg_reg[20]/CE
+ap_config_reg_reg[20]/CLR
+ap_config_reg_reg[20]/D
+ap_config_reg_reg[21]/CE
+ap_config_reg_reg[21]/CLR
+ap_config_reg_reg[21]/D
+ap_config_reg_reg[22]/CE
+ap_config_reg_reg[22]/CLR
+ap_config_reg_reg[22]/D
+ap_config_reg_reg[23]/CE
+ap_config_reg_reg[23]/CLR
+ap_config_reg_reg[23]/D
+ap_config_reg_reg[24]/CE
+ap_config_reg_reg[24]/CLR
+ap_config_reg_reg[24]/D
+ap_config_reg_reg[25]/CE
+ap_config_reg_reg[25]/CLR
+ap_config_reg_reg[25]/D
+ap_config_reg_reg[26]/CE
+ap_config_reg_reg[26]/CLR
+ap_config_reg_reg[26]/D
+ap_config_reg_reg[27]/CE
+ap_config_reg_reg[27]/CLR
+ap_config_reg_reg[27]/D
+ap_config_reg_reg[28]/CE
+ap_config_reg_reg[28]/CLR
+ap_config_reg_reg[28]/D
+ap_config_reg_reg[29]/CE
+ap_config_reg_reg[29]/CLR
+ap_config_reg_reg[29]/D
+ap_config_reg_reg[2]/D
+ap_config_reg_reg[2]/PRE
+ap_config_reg_reg[30]/CE
+ap_config_reg_reg[30]/CLR
+ap_config_reg_reg[30]/D
+ap_config_reg_reg[31]/CE
+ap_config_reg_reg[31]/CLR
+ap_config_reg_reg[31]/D
+ap_config_reg_reg[3]/CE
+ap_config_reg_reg[3]/CLR
+ap_config_reg_reg[3]/D
+ap_config_reg_reg[4]/CE
+ap_config_reg_reg[4]/CLR
+ap_config_reg_reg[4]/D
+ap_config_reg_reg[5]/CE
+ap_config_reg_reg[5]/CLR
+ap_config_reg_reg[5]/D
+ap_config_reg_reg[6]/CE
+ap_config_reg_reg[6]/CLR
+ap_config_reg_reg[6]/D
+ap_config_reg_reg[7]/CE
+ap_config_reg_reg[7]/CLR
+ap_config_reg_reg[7]/D
+ap_config_reg_reg[8]/CE
+ap_config_reg_reg[8]/CLR
+ap_config_reg_reg[8]/D
+ap_config_reg_reg[9]/CE
+ap_config_reg_reg[9]/CLR
+ap_config_reg_reg[9]/D
+axilite_state_reg[0]/CLR
+axilite_state_reg[0]/D
+axilite_state_reg[1]/CLR
+axilite_state_reg[1]/D
+axilite_state_reg[2]/CLR
+axilite_state_reg[2]/D
+axis_state_reg[0]/CLR
+axis_state_reg[0]/D
+axis_state_reg[1]/CLR
+axis_state_reg[1]/D
+data_length_reg_reg[0]/CE
+data_length_reg_reg[0]/CLR
+data_length_reg_reg[0]/D
+data_length_reg_reg[10]/CE
+data_length_reg_reg[10]/CLR
+data_length_reg_reg[10]/D
+data_length_reg_reg[11]/CE
+data_length_reg_reg[11]/CLR
+data_length_reg_reg[11]/D
+data_length_reg_reg[12]/CE
+data_length_reg_reg[12]/CLR
+data_length_reg_reg[12]/D
+data_length_reg_reg[13]/CE
+data_length_reg_reg[13]/CLR
+data_length_reg_reg[13]/D
+data_length_reg_reg[14]/CE
+data_length_reg_reg[14]/CLR
+data_length_reg_reg[14]/D
+data_length_reg_reg[15]/CE
+data_length_reg_reg[15]/CLR
+data_length_reg_reg[15]/D
+data_length_reg_reg[16]/CE
+data_length_reg_reg[16]/CLR
+data_length_reg_reg[16]/D
+data_length_reg_reg[17]/CE
+data_length_reg_reg[17]/CLR
+data_length_reg_reg[17]/D
+data_length_reg_reg[18]/CE
+data_length_reg_reg[18]/CLR
+data_length_reg_reg[18]/D
+data_length_reg_reg[19]/CE
+data_length_reg_reg[19]/CLR
+data_length_reg_reg[19]/D
+data_length_reg_reg[1]/CE
+data_length_reg_reg[1]/CLR
+data_length_reg_reg[1]/D
+data_length_reg_reg[20]/CE
+data_length_reg_reg[20]/CLR
+data_length_reg_reg[20]/D
+data_length_reg_reg[21]/CE
+data_length_reg_reg[21]/CLR
+data_length_reg_reg[21]/D
+data_length_reg_reg[22]/CE
+data_length_reg_reg[22]/CLR
+data_length_reg_reg[22]/D
+data_length_reg_reg[23]/CE
+data_length_reg_reg[23]/CLR
+data_length_reg_reg[23]/D
+data_length_reg_reg[24]/CE
+data_length_reg_reg[24]/CLR
+data_length_reg_reg[24]/D
+data_length_reg_reg[25]/CE
+data_length_reg_reg[25]/CLR
+data_length_reg_reg[25]/D
+data_length_reg_reg[26]/CE
+data_length_reg_reg[26]/CLR
+data_length_reg_reg[26]/D
+data_length_reg_reg[27]/CE
+data_length_reg_reg[27]/CLR
+data_length_reg_reg[27]/D
+data_length_reg_reg[28]/CE
+data_length_reg_reg[28]/CLR
+data_length_reg_reg[28]/D
+data_length_reg_reg[29]/CE
+data_length_reg_reg[29]/CLR
+data_length_reg_reg[29]/D
+data_length_reg_reg[2]/CE
+data_length_reg_reg[2]/CLR
+data_length_reg_reg[2]/D
+data_length_reg_reg[30]/CE
+data_length_reg_reg[30]/CLR
+data_length_reg_reg[30]/D
+data_length_reg_reg[31]/CE
+data_length_reg_reg[31]/CLR
+data_length_reg_reg[31]/D
+data_length_reg_reg[3]/CE
+data_length_reg_reg[3]/CLR
+data_length_reg_reg[3]/D
+data_length_reg_reg[4]/CE
+data_length_reg_reg[4]/CLR
+data_length_reg_reg[4]/D
+data_length_reg_reg[5]/CE
+data_length_reg_reg[5]/CLR
+data_length_reg_reg[5]/D
+data_length_reg_reg[6]/CE
+data_length_reg_reg[6]/CLR
+data_length_reg_reg[6]/D
+data_length_reg_reg[7]/CE
+data_length_reg_reg[7]/CLR
+data_length_reg_reg[7]/D
+data_length_reg_reg[8]/CE
+data_length_reg_reg[8]/CLR
+data_length_reg_reg[8]/D
+data_length_reg_reg[9]/CE
+data_length_reg_reg[9]/CLR
+data_length_reg_reg[9]/D
+data_reset_done_reg/CLR
+data_reset_done_reg/D
+fir_counter_reg[0]/CE
+fir_counter_reg[0]/CLR
+fir_counter_reg[0]/D
+fir_counter_reg[1]/CE
+fir_counter_reg[1]/CLR
+fir_counter_reg[1]/D
+fir_counter_reg[2]/CE
+fir_counter_reg[2]/CLR
+fir_counter_reg[2]/D
+fir_counter_reg[3]/CE
+fir_counter_reg[3]/CLR
+fir_counter_reg[3]/D
+first_input_reg[0]/CE
+first_input_reg[0]/CLR
+first_input_reg[0]/D
+first_input_reg[1]/CE
+first_input_reg[1]/CLR
+first_input_reg[1]/D
+first_input_reg[2]/CE
+first_input_reg[2]/CLR
+first_input_reg[2]/D
+first_input_reg[3]/CE
+first_input_reg[3]/CLR
+first_input_reg[3]/D
+next_axilite_state_reg[0]/D
+next_axilite_state_reg[1]/D
+next_axilite_state_reg[2]/D
+sm_tdata_reg_reg[0]/CE
+sm_tdata_reg_reg[0]/CLR
+sm_tdata_reg_reg[0]/D
+sm_tdata_reg_reg[10]/CE
+sm_tdata_reg_reg[10]/CLR
+sm_tdata_reg_reg[10]/D
+sm_tdata_reg_reg[11]/CE
+sm_tdata_reg_reg[11]/CLR
+sm_tdata_reg_reg[11]/D
+sm_tdata_reg_reg[12]/CE
+sm_tdata_reg_reg[12]/CLR
+sm_tdata_reg_reg[12]/D
+sm_tdata_reg_reg[13]/CE
+sm_tdata_reg_reg[13]/CLR
+sm_tdata_reg_reg[13]/D
+sm_tdata_reg_reg[14]/CE
+sm_tdata_reg_reg[14]/CLR
+sm_tdata_reg_reg[14]/D
+sm_tdata_reg_reg[15]/CE
+sm_tdata_reg_reg[15]/CLR
+sm_tdata_reg_reg[15]/D
+sm_tdata_reg_reg[16]/CE
+sm_tdata_reg_reg[16]/CLR
+sm_tdata_reg_reg[16]/D
+sm_tdata_reg_reg[17]/CE
+sm_tdata_reg_reg[17]/CLR
+sm_tdata_reg_reg[17]/D
+sm_tdata_reg_reg[18]/CE
+sm_tdata_reg_reg[18]/CLR
+sm_tdata_reg_reg[18]/D
+sm_tdata_reg_reg[19]/CE
+sm_tdata_reg_reg[19]/CLR
+sm_tdata_reg_reg[19]/D
+sm_tdata_reg_reg[1]/CE
+sm_tdata_reg_reg[1]/CLR
+sm_tdata_reg_reg[1]/D
+sm_tdata_reg_reg[20]/CE
+sm_tdata_reg_reg[20]/CLR
+sm_tdata_reg_reg[20]/D
+sm_tdata_reg_reg[21]/CE
+sm_tdata_reg_reg[21]/CLR
+sm_tdata_reg_reg[21]/D
+sm_tdata_reg_reg[22]/CE
+sm_tdata_reg_reg[22]/CLR
+sm_tdata_reg_reg[22]/D
+sm_tdata_reg_reg[23]/CE
+sm_tdata_reg_reg[23]/CLR
+sm_tdata_reg_reg[23]/D
+sm_tdata_reg_reg[24]/CE
+sm_tdata_reg_reg[24]/CLR
+sm_tdata_reg_reg[24]/D
+sm_tdata_reg_reg[25]/CE
+sm_tdata_reg_reg[25]/CLR
+sm_tdata_reg_reg[25]/D
+sm_tdata_reg_reg[26]/CE
+sm_tdata_reg_reg[26]/CLR
+sm_tdata_reg_reg[26]/D
+sm_tdata_reg_reg[27]/CE
+sm_tdata_reg_reg[27]/CLR
+sm_tdata_reg_reg[27]/D
+sm_tdata_reg_reg[28]/CE
+sm_tdata_reg_reg[28]/CLR
+sm_tdata_reg_reg[28]/D
+sm_tdata_reg_reg[29]/CE
+sm_tdata_reg_reg[29]/CLR
+sm_tdata_reg_reg[29]/D
+sm_tdata_reg_reg[2]/CE
+sm_tdata_reg_reg[2]/CLR
+sm_tdata_reg_reg[2]/D
+sm_tdata_reg_reg[30]/CE
+sm_tdata_reg_reg[30]/CLR
+sm_tdata_reg_reg[30]/D
+sm_tdata_reg_reg[31]/CE
+sm_tdata_reg_reg[31]/CLR
+sm_tdata_reg_reg[31]/D
+sm_tdata_reg_reg[3]/CE
+sm_tdata_reg_reg[3]/CLR
+sm_tdata_reg_reg[3]/D
+sm_tdata_reg_reg[4]/CE
+sm_tdata_reg_reg[4]/CLR
+sm_tdata_reg_reg[4]/D
+sm_tdata_reg_reg[5]/CE
+sm_tdata_reg_reg[5]/CLR
+sm_tdata_reg_reg[5]/D
+sm_tdata_reg_reg[6]/CE
+sm_tdata_reg_reg[6]/CLR
+sm_tdata_reg_reg[6]/D
+sm_tdata_reg_reg[7]/CE
+sm_tdata_reg_reg[7]/CLR
+sm_tdata_reg_reg[7]/D
+sm_tdata_reg_reg[8]/CE
+sm_tdata_reg_reg[8]/CLR
+sm_tdata_reg_reg[8]/D
+sm_tdata_reg_reg[9]/CE
+sm_tdata_reg_reg[9]/CLR
+sm_tdata_reg_reg[9]/D
+sm_tlast_reg_reg/CE
+sm_tlast_reg_reg/CLR
+sm_tlast_reg_reg/D
+sm_tvalid_reg_reg/CE
+sm_tvalid_reg_reg/D
+ss_tready_reg_reg/CLR
+ss_tready_reg_reg/D
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (114)
+--------------------------------
+ There are 114 input ports with no input delay specified. (HIGH)
+
+arvalid
+awaddr[0]
+awaddr[10]
+awaddr[11]
+awaddr[1]
+awaddr[2]
+awaddr[3]
+awaddr[4]
+awaddr[5]
+awaddr[6]
+awaddr[7]
+awaddr[8]
+awaddr[9]
+awvalid
+axis_rst_n
+data_Do[0]
+data_Do[10]
+data_Do[11]
+data_Do[12]
+data_Do[13]
+data_Do[14]
+data_Do[15]
+data_Do[16]
+data_Do[17]
+data_Do[18]
+data_Do[19]
+data_Do[1]
+data_Do[20]
+data_Do[21]
+data_Do[22]
+data_Do[23]
+data_Do[24]
+data_Do[25]
+data_Do[26]
+data_Do[27]
+data_Do[28]
+data_Do[29]
+data_Do[2]
+data_Do[30]
+data_Do[31]
+data_Do[3]
+data_Do[4]
+data_Do[5]
+data_Do[6]
+data_Do[7]
+data_Do[8]
+data_Do[9]
+rready
+ss_tlast
+tap_Do[0]
+tap_Do[10]
+tap_Do[11]
+tap_Do[12]
+tap_Do[13]
+tap_Do[14]
+tap_Do[15]
+tap_Do[16]
+tap_Do[17]
+tap_Do[18]
+tap_Do[19]
+tap_Do[1]
+tap_Do[20]
+tap_Do[21]
+tap_Do[22]
+tap_Do[23]
+tap_Do[24]
+tap_Do[25]
+tap_Do[26]
+tap_Do[27]
+tap_Do[28]
+tap_Do[29]
+tap_Do[2]
+tap_Do[30]
+tap_Do[31]
+tap_Do[3]
+tap_Do[4]
+tap_Do[5]
+tap_Do[6]
+tap_Do[7]
+tap_Do[8]
+tap_Do[9]
+wdata[0]
+wdata[10]
+wdata[11]
+wdata[12]
+wdata[13]
+wdata[14]
+wdata[15]
+wdata[16]
+wdata[17]
+wdata[18]
+wdata[19]
+wdata[1]
+wdata[20]
+wdata[21]
+wdata[22]
+wdata[23]
+wdata[24]
+wdata[25]
+wdata[26]
+wdata[27]
+wdata[28]
+wdata[29]
+wdata[2]
+wdata[30]
+wdata[31]
+wdata[3]
+wdata[4]
+wdata[5]
+wdata[6]
+wdata[7]
+wdata[8]
+wdata[9]
+wvalid
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (127)
+---------------------------------
+ There are 127 ports with no output delay specified. (HIGH)
+
+arready
+awready
+data_A[2]
+data_A[3]
+data_A[4]
+data_A[5]
+data_Di[0]
+data_Di[10]
+data_Di[11]
+data_Di[12]
+data_Di[13]
+data_Di[14]
+data_Di[15]
+data_Di[16]
+data_Di[17]
+data_Di[18]
+data_Di[19]
+data_Di[1]
+data_Di[20]
+data_Di[21]
+data_Di[22]
+data_Di[23]
+data_Di[24]
+data_Di[25]
+data_Di[26]
+data_Di[27]
+data_Di[28]
+data_Di[29]
+data_Di[2]
+data_Di[30]
+data_Di[31]
+data_Di[3]
+data_Di[4]
+data_Di[5]
+data_Di[6]
+data_Di[7]
+data_Di[8]
+data_Di[9]
+data_WE[0]
+data_WE[1]
+data_WE[2]
+data_WE[3]
+rdata[0]
+rdata[10]
+rdata[11]
+rdata[12]
+rdata[13]
+rdata[14]
+rdata[15]
+rdata[16]
+rdata[17]
+rdata[18]
+rdata[19]
+rdata[1]
+rdata[20]
+rdata[21]
+rdata[22]
+rdata[23]
+rdata[24]
+rdata[25]
+rdata[26]
+rdata[27]
+rdata[28]
+rdata[29]
+rdata[2]
+rdata[30]
+rdata[31]
+rdata[3]
+rdata[4]
+rdata[5]
+rdata[6]
+rdata[7]
+rdata[8]
+rdata[9]
+rvalid
+sm_tdata[0]
+sm_tdata[10]
+sm_tdata[11]
+sm_tdata[12]
+sm_tdata[13]
+sm_tdata[14]
+sm_tdata[15]
+sm_tdata[16]
+sm_tdata[17]
+sm_tdata[18]
+sm_tdata[19]
+sm_tdata[1]
+sm_tdata[20]
+sm_tdata[21]
+sm_tdata[22]
+sm_tdata[23]
+sm_tdata[24]
+sm_tdata[25]
+sm_tdata[26]
+sm_tdata[27]
+sm_tdata[28]
+sm_tdata[29]
+sm_tdata[2]
+sm_tdata[30]
+sm_tdata[31]
+sm_tdata[3]
+sm_tdata[4]
+sm_tdata[5]
+sm_tdata[6]
+sm_tdata[7]
+sm_tdata[8]
+sm_tdata[9]
+sm_tlast
+sm_tvalid
+ss_tready
+tap_A[0]
+tap_A[10]
+tap_A[11]
+tap_A[1]
+tap_A[2]
+tap_A[3]
+tap_A[4]
+tap_A[5]
+tap_A[6]
+tap_A[7]
+tap_A[8]
+tap_A[9]
+tap_WE[0]
+tap_WE[1]
+tap_WE[2]
+tap_WE[3]
+wready
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  490          inf        0.000                      0                  490           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock     Waveform(ns)         Period(ns)      Frequency(MHz)
+-----     ------------         ----------      --------------
+axis_clk  {0.000 2.500}        5.000           200.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           490 Endpoints
+Min Delay           490 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[31]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.843ns  (logic 8.944ns (75.518%)  route 2.899ns (24.482%))
+  Logic Levels:           11  (CARRY4=5 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.837 r  sm_tdata_reg_reg[19]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.009     8.846    sm_tdata_reg_reg[19]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.963 r  sm_tdata_reg_reg[23]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.000     8.963    sm_tdata_reg_reg[23]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     9.294 r  sm_tdata_reg_reg[27]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.912    sm_tdata_reg_reg[27]_i_7_n_4
+                                                                      r  sm_tdata_reg[27]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307    10.219 r  sm_tdata_reg[27]_i_3/O
+                         net (fo=1, unplaced)         0.000    10.219    sm_tdata_reg[27]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.595 r  sm_tdata_reg_reg[27]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.595    sm_tdata_reg_reg[27]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[31]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    10.926 r  sm_tdata_reg_reg[31]_i_2/O[3]
+                         net (fo=1, unplaced)         0.618    11.544    sm_tdata_reg0[31]
+                                                                      r  sm_tdata_reg[31]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.299    11.843 r  sm_tdata_reg[31]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.843    sm_tdata_reg[31]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[27]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.726ns  (logic 8.827ns (75.274%)  route 2.899ns (24.726%))
+  Logic Levels:           10  (CARRY4=4 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.837 r  sm_tdata_reg_reg[19]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.009     8.846    sm_tdata_reg_reg[19]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     9.177 r  sm_tdata_reg_reg[23]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.795    sm_tdata_reg_reg[23]_i_7_n_4
+                                                                      r  sm_tdata_reg[23]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307    10.102 r  sm_tdata_reg[23]_i_3/O
+                         net (fo=1, unplaced)         0.000    10.102    sm_tdata_reg[23]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.478 r  sm_tdata_reg_reg[23]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.478    sm_tdata_reg_reg[23]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    10.809 r  sm_tdata_reg_reg[27]_i_2/O[3]
+                         net (fo=1, unplaced)         0.618    11.427    sm_tdata_reg0[27]
+                                                                      r  sm_tdata_reg[27]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.299    11.726 r  sm_tdata_reg[27]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.726    sm_tdata_reg[27]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[30]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.604ns  (logic 8.871ns (76.444%)  route 2.733ns (23.556%))
+  Logic Levels:           11  (CARRY4=5 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.837 r  sm_tdata_reg_reg[19]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.009     8.846    sm_tdata_reg_reg[19]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.963 r  sm_tdata_reg_reg[23]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.000     8.963    sm_tdata_reg_reg[23]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     9.294 r  sm_tdata_reg_reg[27]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.912    sm_tdata_reg_reg[27]_i_7_n_4
+                                                                      r  sm_tdata_reg[27]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307    10.219 r  sm_tdata_reg[27]_i_3/O
+                         net (fo=1, unplaced)         0.000    10.219    sm_tdata_reg[27]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.595 r  sm_tdata_reg_reg[27]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.595    sm_tdata_reg_reg[27]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[31]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    10.851 r  sm_tdata_reg_reg[31]_i_2/O[2]
+                         net (fo=1, unplaced)         0.452    11.303    sm_tdata_reg0[30]
+                                                                      r  sm_tdata_reg[30]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.301    11.604 r  sm_tdata_reg[30]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.604    sm_tdata_reg[30]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[29]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.542ns  (logic 8.949ns (77.531%)  route 2.593ns (22.469%))
+  Logic Levels:           11  (CARRY4=5 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.837 r  sm_tdata_reg_reg[19]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.009     8.846    sm_tdata_reg_reg[19]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.963 r  sm_tdata_reg_reg[23]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.000     8.963    sm_tdata_reg_reg[23]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     9.294 r  sm_tdata_reg_reg[27]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.912    sm_tdata_reg_reg[27]_i_7_n_4
+                                                                      r  sm_tdata_reg[27]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307    10.219 r  sm_tdata_reg[27]_i_3/O
+                         net (fo=1, unplaced)         0.000    10.219    sm_tdata_reg[27]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.595 r  sm_tdata_reg_reg[27]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.595    sm_tdata_reg_reg[27]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[31]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    10.932 r  sm_tdata_reg_reg[31]_i_2/O[1]
+                         net (fo=1, unplaced)         0.312    11.244    sm_tdata_reg0[29]
+                                                                      r  sm_tdata_reg[29]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.298    11.542 r  sm_tdata_reg[29]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.542    sm_tdata_reg[29]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[23]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.496ns  (logic 8.606ns (74.857%)  route 2.890ns (25.143%))
+  Logic Levels:           9  (CARRY4=3 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.947 r  sm_tdata_reg_reg[19]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.565    sm_tdata_reg_reg[19]_i_7_n_4
+                                                                      r  sm_tdata_reg[19]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307     9.872 r  sm_tdata_reg[19]_i_3/O
+                         net (fo=1, unplaced)         0.000     9.872    sm_tdata_reg[19]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.248 r  sm_tdata_reg_reg[19]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.248    sm_tdata_reg_reg[19]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    10.579 r  sm_tdata_reg_reg[23]_i_2/O[3]
+                         net (fo=1, unplaced)         0.618    11.197    sm_tdata_reg0[23]
+                                                                      r  sm_tdata_reg[23]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.299    11.496 r  sm_tdata_reg[23]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.496    sm_tdata_reg[23]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[26]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.487ns  (logic 8.754ns (76.204%)  route 2.733ns (23.796%))
+  Logic Levels:           10  (CARRY4=4 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.837 r  sm_tdata_reg_reg[19]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.009     8.846    sm_tdata_reg_reg[19]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     9.177 r  sm_tdata_reg_reg[23]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.795    sm_tdata_reg_reg[23]_i_7_n_4
+                                                                      r  sm_tdata_reg[23]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307    10.102 r  sm_tdata_reg[23]_i_3/O
+                         net (fo=1, unplaced)         0.000    10.102    sm_tdata_reg[23]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.478 r  sm_tdata_reg_reg[23]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.478    sm_tdata_reg_reg[23]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    10.734 r  sm_tdata_reg_reg[27]_i_2/O[2]
+                         net (fo=1, unplaced)         0.452    11.186    sm_tdata_reg0[26]
+                                                                      r  sm_tdata_reg[26]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.301    11.487 r  sm_tdata_reg[26]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.487    sm_tdata_reg[26]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[28]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.433ns  (logic 8.841ns (77.325%)  route 2.592ns (22.675%))
+  Logic Levels:           11  (CARRY4=5 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.837 r  sm_tdata_reg_reg[19]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.009     8.846    sm_tdata_reg_reg[19]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.963 r  sm_tdata_reg_reg[23]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.000     8.963    sm_tdata_reg_reg[23]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     9.294 r  sm_tdata_reg_reg[27]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.912    sm_tdata_reg_reg[27]_i_7_n_4
+                                                                      r  sm_tdata_reg[27]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307    10.219 r  sm_tdata_reg[27]_i_3/O
+                         net (fo=1, unplaced)         0.000    10.219    sm_tdata_reg[27]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.595 r  sm_tdata_reg_reg[27]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.595    sm_tdata_reg_reg[27]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[31]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232    10.827 r  sm_tdata_reg_reg[31]_i_2/O[0]
+                         net (fo=1, unplaced)         0.311    11.138    sm_tdata_reg0[28]
+                                                                      r  sm_tdata_reg[28]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.295    11.433 r  sm_tdata_reg[28]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.433    sm_tdata_reg[28]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[25]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.425ns  (logic 8.832ns (77.301%)  route 2.593ns (22.699%))
+  Logic Levels:           10  (CARRY4=4 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.837 r  sm_tdata_reg_reg[19]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.009     8.846    sm_tdata_reg_reg[19]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     9.177 r  sm_tdata_reg_reg[23]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.795    sm_tdata_reg_reg[23]_i_7_n_4
+                                                                      r  sm_tdata_reg[23]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307    10.102 r  sm_tdata_reg[23]_i_3/O
+                         net (fo=1, unplaced)         0.000    10.102    sm_tdata_reg[23]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.478 r  sm_tdata_reg_reg[23]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.478    sm_tdata_reg_reg[23]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    10.815 r  sm_tdata_reg_reg[27]_i_2/O[1]
+                         net (fo=1, unplaced)         0.312    11.127    sm_tdata_reg0[25]
+                                                                      r  sm_tdata_reg[25]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.298    11.425 r  sm_tdata_reg[25]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.425    sm_tdata_reg[25]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[24]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.316ns  (logic 8.724ns (77.091%)  route 2.592ns (22.909%))
+  Logic Levels:           10  (CARRY4=4 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.837 r  sm_tdata_reg_reg[19]_i_7/CO[3]
+                         net (fo=1, unplaced)         0.009     8.846    sm_tdata_reg_reg[19]_i_7_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_7/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     9.177 r  sm_tdata_reg_reg[23]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.795    sm_tdata_reg_reg[23]_i_7_n_4
+                                                                      r  sm_tdata_reg[23]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307    10.102 r  sm_tdata_reg[23]_i_3/O
+                         net (fo=1, unplaced)         0.000    10.102    sm_tdata_reg[23]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.478 r  sm_tdata_reg_reg[23]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.478    sm_tdata_reg_reg[23]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[27]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232    10.710 r  sm_tdata_reg_reg[27]_i_2/O[0]
+                         net (fo=1, unplaced)         0.311    11.021    sm_tdata_reg0[24]
+                                                                      r  sm_tdata_reg[24]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.295    11.316 r  sm_tdata_reg[24]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.316    sm_tdata_reg[24]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 data_Do[16]
+                            (input port)
+  Destination:            sm_tdata_reg_reg[22]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        11.257ns  (logic 8.533ns (75.798%)  route 2.724ns (24.202%))
+  Logic Levels:           9  (CARRY4=3 DSP48E1=2 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  data_Do[16] (IN)
+                         net (fo=0)                   0.000     0.000    data_Do[16]
+                                                                      r  data_Do_IBUF[16]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  data_Do_IBUF[16]_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    data_Do_IBUF[16]
+                                                                      r  sm_tdata_reg1__0/A[16]
+                         DSP48E1 (Prop_dsp48e1_A[16]_PCOUT[47])
+                                                      4.036     5.807 r  sm_tdata_reg1__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.055     5.862    sm_tdata_reg1__0_n_106
+                                                                      r  sm_tdata_reg1__1/PCIN[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     7.380 r  sm_tdata_reg1__1/P[0]
+                         net (fo=2, unplaced)         0.800     8.180    sm_tdata_reg1__1_n_105
+                                                                      r  sm_tdata_reg[19]_i_10/I0
+                         LUT2 (Prop_lut2_I0_O)        0.124     8.304 r  sm_tdata_reg[19]_i_10/O
+                         net (fo=1, unplaced)         0.000     8.304    sm_tdata_reg[19]_i_10_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_7/S[1]
+                         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     8.947 r  sm_tdata_reg_reg[19]_i_7/O[3]
+                         net (fo=1, unplaced)         0.618     9.565    sm_tdata_reg_reg[19]_i_7_n_4
+                                                                      r  sm_tdata_reg[19]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.307     9.872 r  sm_tdata_reg[19]_i_3/O
+                         net (fo=1, unplaced)         0.000     9.872    sm_tdata_reg[19]_i_3_n_0
+                                                                      r  sm_tdata_reg_reg[19]_i_2/S[3]
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    10.248 r  sm_tdata_reg_reg[19]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000    10.248    sm_tdata_reg_reg[19]_i_2_n_0
+                                                                      r  sm_tdata_reg_reg[23]_i_2/CI
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    10.504 r  sm_tdata_reg_reg[23]_i_2/O[2]
+                         net (fo=1, unplaced)         0.452    10.956    sm_tdata_reg0[22]
+                                                                      r  sm_tdata_reg[22]_i_1/I0
+                         LUT2 (Prop_lut2_I0_O)        0.301    11.257 r  sm_tdata_reg[22]_i_1/O
+                         net (fo=1, unplaced)         0.000    11.257    sm_tdata_reg[22]_i_1_n_0
+                         FDCE                                         r  sm_tdata_reg_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 next_axilite_state_reg[0]/G
+                            (positive level-sensitive latch)
+  Destination:            axilite_state_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.318ns  (logic 0.178ns (55.910%)  route 0.140ns (44.090%))
+  Logic Levels:           1  (LDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         LDCE                         0.000     0.000 r  next_axilite_state_reg[0]/G
+                         LDCE (EnToQ_ldce_G_Q)        0.178     0.178 r  next_axilite_state_reg[0]/Q
+                         net (fo=1, unplaced)         0.140     0.318    next_axilite_state[0]
+                         FDCE                                         r  axilite_state_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 next_axilite_state_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            axilite_state_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.318ns  (logic 0.178ns (55.910%)  route 0.140ns (44.090%))
+  Logic Levels:           1  (LDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         LDCE                         0.000     0.000 r  next_axilite_state_reg[1]/G
+                         LDCE (EnToQ_ldce_G_Q)        0.178     0.178 r  next_axilite_state_reg[1]/Q
+                         net (fo=1, unplaced)         0.140     0.318    next_axilite_state[1]
+                         FDCE                                         r  axilite_state_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 next_axilite_state_reg[2]/G
+                            (positive level-sensitive latch)
+  Destination:            axilite_state_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.318ns  (logic 0.178ns (55.910%)  route 0.140ns (44.090%))
+  Logic Levels:           1  (LDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         LDCE                         0.000     0.000 r  next_axilite_state_reg[2]/G
+                         LDCE (EnToQ_ldce_G_Q)        0.178     0.178 r  next_axilite_state_reg[2]/Q
+                         net (fo=1, unplaced)         0.140     0.318    next_axilite_state[2]
+                         FDCE                                         r  axilite_state_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 axis_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            sm_tdata_reg_reg[0]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.329ns  (logic 0.147ns (44.725%)  route 0.182ns (55.275%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  axis_state_reg[1]/C
+                         FDCE (Prop_fdce_C_Q)         0.147     0.147 r  axis_state_reg[1]/Q
+                         net (fo=87, unplaced)        0.182     0.329    axis_state[1]
+                         FDCE                                         r  sm_tdata_reg_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 axis_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            sm_tdata_reg_reg[10]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.329ns  (logic 0.147ns (44.725%)  route 0.182ns (55.275%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  axis_state_reg[1]/C
+                         FDCE (Prop_fdce_C_Q)         0.147     0.147 r  axis_state_reg[1]/Q
+                         net (fo=87, unplaced)        0.182     0.329    axis_state[1]
+                         FDCE                                         r  sm_tdata_reg_reg[10]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 axis_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            sm_tdata_reg_reg[11]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.329ns  (logic 0.147ns (44.725%)  route 0.182ns (55.275%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  axis_state_reg[1]/C
+                         FDCE (Prop_fdce_C_Q)         0.147     0.147 r  axis_state_reg[1]/Q
+                         net (fo=87, unplaced)        0.182     0.329    axis_state[1]
+                         FDCE                                         r  sm_tdata_reg_reg[11]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 axis_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            sm_tdata_reg_reg[12]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.329ns  (logic 0.147ns (44.725%)  route 0.182ns (55.275%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  axis_state_reg[1]/C
+                         FDCE (Prop_fdce_C_Q)         0.147     0.147 r  axis_state_reg[1]/Q
+                         net (fo=87, unplaced)        0.182     0.329    axis_state[1]
+                         FDCE                                         r  sm_tdata_reg_reg[12]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 axis_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            sm_tdata_reg_reg[13]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.329ns  (logic 0.147ns (44.725%)  route 0.182ns (55.275%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  axis_state_reg[1]/C
+                         FDCE (Prop_fdce_C_Q)         0.147     0.147 r  axis_state_reg[1]/Q
+                         net (fo=87, unplaced)        0.182     0.329    axis_state[1]
+                         FDCE                                         r  sm_tdata_reg_reg[13]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 axis_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            sm_tdata_reg_reg[14]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.329ns  (logic 0.147ns (44.725%)  route 0.182ns (55.275%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  axis_state_reg[1]/C
+                         FDCE (Prop_fdce_C_Q)         0.147     0.147 r  axis_state_reg[1]/Q
+                         net (fo=87, unplaced)        0.182     0.329    axis_state[1]
+                         FDCE                                         r  sm_tdata_reg_reg[14]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 axis_state_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            sm_tdata_reg_reg[15]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.329ns  (logic 0.147ns (44.725%)  route 0.182ns (55.275%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  axis_state_reg[1]/C
+                         FDCE (Prop_fdce_C_Q)         0.147     0.147 r  axis_state_reg[1]/Q
+                         net (fo=87, unplaced)        0.182     0.329    axis_state[1]
+                         FDCE                                         r  sm_tdata_reg_reg[15]/CE
+  -------------------------------------------------------------------    -------------------
+
+
+
+
