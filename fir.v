@@ -277,7 +277,7 @@ module fir
     end
     
     //Di
-    assign data_Di = (axis_state == axis_idle)? 0 : ss_tdata;  // reset to 0 when AXIS_state == `AXIS_IDLE
+	assign data_Di = (axis_state == axis_idle)? 0 : ss_tdata;  // axis_idle reset to 0
     assign tap_Di = wdata;
 
     //addr
